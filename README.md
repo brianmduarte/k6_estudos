@@ -14,25 +14,25 @@
 **2. Instalação**
 
 1º
-``bash
+```bash
 sudo gpg --no-default-keyring --keyring /usr/share/keyrings/k6-archive-keyring.gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C5AD17C747E3415A3642D57D77C6C491D6AC1D69
 echo
-`` 
+```
 
 2º
-``
+```bash
 "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.io/deb stable main" | sudo tee /etc/apt/sources.list.d/k6.list
-``
+```
 
 3º
-``
+```bash
 sudo apt-get update
-``
+```
 
 4º
-``
+```bash
 sudo apt-get install k6
-``
+```
 
 Obs: execute uma linha de comando por vez
 
@@ -40,23 +40,23 @@ Obs: execute uma linha de comando por vez
 
 Crie uma pasta com o nome desejado para hospedagem do k6:
 
-``bash
+```bash
 mkdir C:/Testes/k6
-``
+```
 
 Na raiz do projeto (/k6), crie um arquivo JavaScript chamado script.js:
 
-``bash
+```bash
 touch script.js
-``
+```
 
 **4. Abrindo o projeto**
 
 Ainda no terminal, execute o comando abaixo para abrir a IDE de desenvolvimento
 
-``bash
+```bash
 code .
-``
+```
 
 **5. Criando um teste base com o k6**
 
