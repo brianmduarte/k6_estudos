@@ -1,6 +1,9 @@
 
 ## Estudo utilizando o K6 para Testes de Performance 🚀
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b1474a3b-0e5b-4ce9-9fbe-bbd0024e3e20" alt="K6-logo svg" width="200">
+</p>
 
 
 **1. Pré-requisitos**
