@@ -5,12 +5,12 @@
 * Sistema operacional: Ubuntu 14. ou superior
 
 2. Instalação
-´´bash
+``bash
 sudo gpg --no-default-keyring --keyring /usr/share/keyrings/k6-archive-keyring.gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C5AD17C747E3415A3642D57D77C6C491D6AC1D69
 echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.io/deb stable main" | sudo tee /etc/apt/sources.list.d/k6.list
 sudo apt-get update
 sudo apt-get install k6
-´´
+``
 
 Obs: execute uma linha de comando por vez
 
@@ -18,15 +18,15 @@ Obs: execute uma linha de comando por vez
 
 * Crie uma pasta com o nome desejado para hospedagem do k6
 
-´´bash
+``bash
 mkdir C:/Testes/k6
-´´
+``
 
 * Na raiz do projeto (/k6), crie um arquivo JavaScript chamado script.JavaScript
 
-´´bash
+``bash
 touch script.js
-´´
+``
 
 4. Abrindo o projeto
 
@@ -40,7 +40,7 @@ code .
 
 * Copie e cole o script abaixo no seu arquivo script.js
 
-´´bash
+``bash
 import http from 'k6/http';
 import { sleep } from 'k6';
 
@@ -48,7 +48,7 @@ export default function () {
   http.get('https://test.k6.io');
   sleep(1);
 }
-´´
+``
 
 Neste código, estamos importando o http para realizar as requisições dos 
 testes. O sleep é utilizado para aguardar um determinado período de tempo, 
